@@ -130,3 +130,5 @@ Definition some_ex : option nat := Some 3.
 Definition none_ex : option nat := None.
 
 Definition none_ex_2 := @None nat.
+
+End Option.

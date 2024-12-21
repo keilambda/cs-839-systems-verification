@@ -15,6 +15,7 @@
           coq
           coqPackages.stdpp
           coqPackages.iris
+          coqPackages.serapi
           coqPackages.coq-lsp
         ];
 

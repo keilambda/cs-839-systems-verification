@@ -6,7 +6,7 @@
 
   outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system:
     let
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs { localSystem = { inherit system; }; };
       coqPackages = pkgs.coqPackages;
     in
     {
@@ -15,6 +15,7 @@
           coq
           coqPackages.stdpp
           coqPackages.iris
+          coqPackages.coq-lsp
         ];
 
         shellHook = ''

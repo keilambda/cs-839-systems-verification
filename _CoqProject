@@ -1,4 +1,3 @@
--Q . SysVer
+-Q src SysVer
 
-src/Intro.v
-src/Induction.v
+src
